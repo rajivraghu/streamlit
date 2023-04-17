@@ -16,7 +16,7 @@ import uuid
 
 try:
     api_keys=dotenv_values()
-    os.environ['O_Key'] = dotenv_values()['openai_api_key'] #set environment variable
+    os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
     print('set api')
 except:
     pass
@@ -56,7 +56,7 @@ with tab1:
     
 with tab2:
     # Enter OpenAI API here
-    if os.environ['O_Key'] == '':
+    if os.environ['OPENAI_API_KEY'] == '':
         st.session_state['openai_api_key'] = st.text_input('Enter your OpenAI API key:', placeholder ='sk-...')
         os.environ['OPENAI_API_KEY'] = st.session_state['openai_api_key']
 
