@@ -4,3 +4,4 @@ streamlit
 langchain
 pandas
 plotly
+python-dotenv==0.19.2
