@@ -1,5 +1,5 @@
 streamlit==1.21.0
 langchain==0.0.141
-dotenv==0.0.5
+dotenv
 pandas==1.4.1
 plotly==1.6.1
